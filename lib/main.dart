@@ -154,7 +154,7 @@ class _Chip extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
         decoration: BoxDecoration(
-          color: AppTheme.accent.withOpacity(0.12),
+          color: AppTheme.accent.withValues(alpha: 0.12),
           borderRadius: BorderRadius.circular(999),
           border: Border.all(color: AppTheme.border),
         ),

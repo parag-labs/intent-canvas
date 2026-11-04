@@ -55,10 +55,10 @@ class _ModuleCardState extends State<ModuleCard> {
         decoration: BoxDecoration(
           color: AppTheme.surface,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: _hovered ? AppTheme.accent.withOpacity(0.5) : AppTheme.border),
+          border: Border.all(color: _hovered ? AppTheme.accent.withValues(alpha: 0.5) : AppTheme.border),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(_hovered ? 0.45 : 0.3),
+              color: Colors.black.withValues(alpha: _hovered ? 0.45 : 0.3),
               blurRadius: _hovered ? 26 : 16,
               offset: const Offset(0, 10),
             ),
@@ -73,7 +73,7 @@ class _ModuleCardState extends State<ModuleCard> {
                   width: 34,
                   height: 34,
                   decoration: BoxDecoration(
-                    color: AppTheme.accent.withOpacity(0.16),
+                    color: AppTheme.accent.withValues(alpha: 0.16),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Icon(_iconFor(m.kind), size: 18, color: AppTheme.accent2),
