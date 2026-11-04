@@ -100,7 +100,7 @@ class _CanvasScreenState extends State<CanvasScreen> {
                       child: ListView.separated(
                         scrollDirection: Axis.horizontal,
                         itemCount: _suggestions.length,
-                        separatorBuilder: (_, __) => const SizedBox(width: 8),
+                        separatorBuilder: (_, _) => const SizedBox(width: 8),
                         itemBuilder: (_, i) => _Chip(label: _suggestions[i], onTap: () => _run(_suggestions[i])),
                       ),
                     ),

@@ -51,7 +51,10 @@ flowchart TB
 
 ## Demo
 
+Requires **Flutter 3.47.9** (stable, Dart 3.13) — the version CI and the Pages deploy use.
+
 ```bash
+flutter pub get
 flutter run -d chrome     # web
 flutter run               # a connected device / simulator
 ```
